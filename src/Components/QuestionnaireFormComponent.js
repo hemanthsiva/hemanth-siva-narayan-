@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import api from "../Services/api";
 import { TextField, Button, Box, Typography, Grid } from "@mui/material";
 
 function QuestionnaireFormComponent({ setQuestions, setCandidate }) {
@@ -19,6 +18,11 @@ function QuestionnaireFormComponent({ setQuestions, setCandidate }) {
     ]);
   };
 
+  const removeQuestion = (index) => {
+    const updatedQuestions = questions.filter((_, i) => i !== index);
+    updateQuestions(updatedQuestions);
+  };
+
   const handleQuestionChange = (index, field, value) => {
     const updatedQuestions = [...questions];
     updatedQuestions[index][field] = value;
@@ -30,9 +34,27 @@ function QuestionnaireFormComponent({ setQuestions, setCandidate }) {
   };
 
   const handleSubmit = () => {
+    if (questions.length === 0) {
+      alert("Please add at least one question before submitting.");
+      return;
+    }
+
+    // Ensure that all fields are filled in for each question
+    for (let i = 0; i < questions.length; i++) {
+      if (
+        questions[i].question === "" ||
+        questions[i].options.some((opt) => opt === "") ||
+        questions[i].correctAnswer === ""
+      ) {
+        alert("Please fill in all fields for each question.");
+        return;
+      }
+    }
+
     setQuestions(questions);
     setCandidate(candidate);
-    api.saveQuestions({ candidate, questions });
+    localStorage.setItem("questions", JSON.stringify(questions));
+    localStorage.setItem("candidate", JSON.stringify(candidate));
     navigate("/answer-questions");
   };
 
@@ -119,6 +141,14 @@ function QuestionnaireFormComponent({ setQuestions, setCandidate }) {
             margin="normal"
             required
           />
+          <Button
+            variant="contained"
+            color="secondary"
+            sx={{ mt: 1 }}
+            onClick={() => removeQuestion(index)}
+          >
+            Remove Question
+          </Button>
         </Box>
       ))}
       <Grid container spacing={2} sx={{ mt: 3 }}>
