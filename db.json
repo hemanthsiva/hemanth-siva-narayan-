@@ -1,0 +1,206 @@
+{
+  "questions": [
+    {
+      "id": "860a",
+      "candidate": {
+        "name": "Hemanth Siva Narayan C",
+        "email": "hemanthsivanarayanc@gmail.com",
+        "phone": "08883963966"
+      },
+      "questions": []
+    },
+    {
+      "id": "8c35",
+      "candidate": {
+        "name": "Hemanth Siva Narayan C",
+        "email": "hemanthsivanarayanc@gmail.com",
+        "phone": "08883963966"
+      },
+      "questions": [
+        {
+          "question": "what is java",
+          "options": [
+            "pl",
+            "sql",
+            "html",
+            "css",
+            "none"
+          ],
+          "correctAnswer": "pl"
+        },
+        {
+          "question": "what is react",
+          "options": [
+            "js",
+            "ts",
+            "both",
+            "none ",
+            "programming lang"
+          ],
+          "correctAnswer": "both"
+        },
+        {
+          "question": "",
+          "options": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "correctAnswer": ""
+        }
+      ]
+    },
+    {
+      "id": "8b8a",
+      "candidate": {
+        "name": "Hemanth Siva Narayan C",
+        "email": "hemanthsivanarayanc@gmail.com",
+        "phone": "08883963966"
+      },
+      "questions": [
+        {
+          "question": "what is java",
+          "options": [
+            "123",
+            "456",
+            "789",
+            "opq",
+            "qwe"
+          ],
+          "correctAnswer": "123"
+        },
+        {
+          "question": "what is react",
+          "options": [
+            "qaz",
+            "wer",
+            "oqk",
+            "ebw",
+            "qne"
+          ],
+          "correctAnswer": "qne"
+        },
+        {
+          "question": "",
+          "options": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "correctAnswer": ""
+        }
+      ]
+    },
+    {
+      "id": "dff3",
+      "candidate": {
+        "name": "Hemanth Siva Narayan C",
+        "email": "hemanthsivanarayanc@gmail.com",
+        "phone": "08883963966"
+      },
+      "questions": [
+        {
+          "question": "uihui",
+          "options": [
+            "uguig",
+            "uuig",
+            "uigu",
+            "1234",
+            "7689"
+          ],
+          "correctAnswer": "1234"
+        },
+        {
+          "question": "jij9",
+          "options": [
+            "gugui",
+            "ubiub",
+            "oiubiob",
+            "oibibio",
+            "5678"
+          ],
+          "correctAnswer": "5678"
+        }
+      ]
+    },
+    {
+      "id": "29d8",
+      "candidate": {
+        "name": "Hemanth Siva Narayan C",
+        "email": "hemanthsivanarayanc@gmail.com",
+        "phone": "8883963966"
+      },
+      "questions": [
+        {
+          "question": "what is java",
+          "options": [
+            "pl",
+            "sql",
+            "apl",
+            "both",
+            "none"
+          ],
+          "correctAnswer": "pl"
+        },
+        {
+          "question": "what is react",
+          "options": [
+            "sl",
+            "ql",
+            "rl",
+            "none",
+            "all"
+          ],
+          "correctAnswer": "sl"
+        }
+      ]
+    }
+  ],
+  "candidates": [],
+  "answers": [
+    {
+      "id": "4c9f",
+      "answers": []
+    },
+    {
+      "id": "c345",
+      "answers": [
+        "pl",
+        "both"
+      ]
+    },
+    {
+      "id": "0418",
+      "answers": [
+        "123",
+        "qne"
+      ]
+    },
+    {
+      "id": "be88",
+      "answers": [
+        null,
+        null,
+        ""
+      ]
+    },
+    {
+      "id": "b481",
+      "answers": [
+        "1234",
+        "5678"
+      ]
+    },
+    {
+      "id": "c092",
+      "answers": [
+        "pl",
+        "sl"
+      ]
+    }
+  ]
+}

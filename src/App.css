@@ -1,0 +1,105 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the app */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #343a40;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #495057;
+}
+
+/* input[type="text"], input[type="email"], input[type="number"], input[type="password"] select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1rem;
+} */
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Question and options styling */
+.question {
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  margin-bottom: 10px;
+}
+
+/* Summary page styling */
+.summary {
+  margin-top: 30px;
+}
+
+.summary h2 {
+  color: #28a745;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.summary .response {
+  margin-bottom: 15px;
+}
+
+.score {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #17a2b8;
+}
+
