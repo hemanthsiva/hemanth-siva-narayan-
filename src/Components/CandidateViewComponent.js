@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import api from "../Services/api";
 import {
   Box,
   Button,
@@ -15,6 +14,7 @@ import {
   Divider,
   TextField,
 } from "@mui/material";
+import api from "../Services/api";
 
 function CandidateViewComponent() {
   const navigate = useNavigate();
@@ -35,7 +35,7 @@ function CandidateViewComponent() {
           Object.values(item)
             .filter((subItem) => subItem.question)
             .map((subItem) => ({
-              id: subItem.id,
+              id: subItem.id || Math.random().toString(36).substr(2, 9), // Generate a unique ID if missing
               question: subItem.question,
               options: subItem.options,
               correctAnswer: subItem.correctAnswer,
@@ -113,8 +113,8 @@ function CandidateViewComponent() {
                 <FormControl component="fieldset" fullWidth>
                   <FormLabel component="legend">{q.question}</FormLabel>
                   <RadioGroup
-                    aria-label={q.id}
-                    name={q.id}
+                    aria-label={q.question}
+                    name={q.id.toString()} // Safely convert the ID to a string
                     value={answers[q.id] || ""}
                     onChange={(e) => handleAnswerChange(q.id, e.target.value)}
                   >

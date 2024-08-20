@@ -289,6 +289,32 @@
         "phone": "08883963966"
       },
       "score": 1
+    },
+    {
+      "id": "c025",
+      "answers": {
+        "gkixxyqsx": "DIU",
+        "6vqf74pq5": "EFOH"
+      },
+      "candidate": {
+        "name": "Hemanth Siva Narayan C",
+        "email": "hemanthsivanarayanc@gmail.com",
+        "phone": "08883963966"
+      },
+      "score": 0
+    },
+    {
+      "id": "9747",
+      "answers": {
+        "yui6jcpv9": "BH",
+        "yw2moofk6": "IOEF"
+      },
+      "candidate": {
+        "name": "",
+        "email": "",
+        "phone": ""
+      },
+      "score": 2
     }
   ],
   "users": [
