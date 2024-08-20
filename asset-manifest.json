@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hemanth-siva-narayan-/static/css/main.b3ae8e64.css",
+    "main.js": "/hemanth-siva-narayan-/static/js/main.84f48326.js",
+    "index.html": "/hemanth-siva-narayan-/index.html",
+    "main.b3ae8e64.css.map": "/hemanth-siva-narayan-/static/css/main.b3ae8e64.css.map",
+    "main.84f48326.js.map": "/hemanth-siva-narayan-/static/js/main.84f48326.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3ae8e64.css",
+    "static/js/main.84f48326.js"
+  ]
+}
