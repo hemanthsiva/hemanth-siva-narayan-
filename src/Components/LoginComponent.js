@@ -1,70 +1,32 @@
-// import React from "react";
-// import { useNavigate } from "react-router-dom";
-
-// import { Button, TextField, Typography, Box } from "@mui/material";
-
-// function LoginComponent() {
-//   const navigate = useNavigate();
-
-//   const handleLogin = (e) => {
-//     e.preventDefault();
-//     navigate("/create-questions");
-//   };
-
-//   return (
-//     <Box
-//       sx={{
-//         display: "flex",
-//         flexDirection: "column",
-//         alignItems: "center",
-//         mt: 8,
-//       }}
-//     >
-//       <Typography variant="h4" gutterBottom>
-//         Login
-//       </Typography>
-//       <form onSubmit={handleLogin}>
-//         <TextField
-//           label="Username"
-//           variant="outlined"
-//           margin="normal"
-//           sx={{ mb: 2 }}
-//           //fullWidth
-//           required
-//         />
-//         <TextField
-//           label="Password"
-//           type="password"
-//           variant="outlined"
-//           margin="normal"
-//           fullWidth
-//           required
-//         />
-//         <Button
-//           type="submit"
-//           variant="contained"
-//           color="primary"
-//           sx={{ mt: 2 }}
-//         >
-//           Login
-//         </Button>
-//       </form>
-//     </Box>
-//   );
-// }
-
-// export default LoginComponent;
-
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, TextField, Typography } from "@mui/material";
 
 function LoginComponent() {
   const navigate = useNavigate();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleLogin = (e) => {
     e.preventDefault();
-    navigate("/create-questions");
+
+    // Hardcoded credentials
+    const adminCredentials = { username: "admin", password: "admin" };
+    const userCredentials = { username: "user", password: "user" };
+
+    if (
+      username === adminCredentials.username &&
+      password === adminCredentials.password
+    ) {
+      navigate("/create-questions");
+    } else if (
+      username === userCredentials.username &&
+      password === userCredentials.password
+    ) {
+      navigate("/answer-questions");
+    } else {
+      alert("Invalid credentials");
+    }
   };
 
   return (
@@ -78,7 +40,7 @@ function LoginComponent() {
         bgcolor: "background.paper",
         p: 3,
         boxShadow: 3,
-        borderRadius: 0,
+        borderRadius: 1,
         mx: "auto",
         maxWidth: 400,
       }}
@@ -90,20 +52,22 @@ function LoginComponent() {
         <TextField
           variant="outlined"
           label="Username"
-          type="email"
+          type="text"
           fullWidth
-          // margin="none"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          margin="normal"
           required
-          // sx={{ mb: 2 }}
         />
         <TextField
           variant="outlined"
           label="Password"
           type="password"
           fullWidth
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
           margin="normal"
           required
-          sx={{ mb: 2 }}
         />
         <Button type="submit" variant="contained" color="primary" fullWidth>
           Login

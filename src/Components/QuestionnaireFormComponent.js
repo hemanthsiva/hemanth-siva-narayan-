@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TextField, Button, Box, Typography, Grid } from "@mui/material";
+import api from "../Services/api";
 
 function QuestionnaireFormComponent({ setQuestions, setCandidate }) {
   const [questions, updateQuestions] = useState([]);
@@ -51,11 +52,10 @@ function QuestionnaireFormComponent({ setQuestions, setCandidate }) {
       }
     }
 
-    setQuestions(questions);
-    setCandidate(candidate);
-    localStorage.setItem("questions", JSON.stringify(questions));
-    localStorage.setItem("candidate", JSON.stringify(candidate));
-    navigate("/answer-questions");
+    api.saveQuestions(questions).then(() => {
+      alert("Questionnaire set successfully!");
+      navigate("/admin-summary");
+    });
   };
 
   return (

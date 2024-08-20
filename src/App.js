@@ -1,16 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LoginComponent from "./Components/LoginComponent";
 import QuestionnaireFormComponent from "./Components/QuestionnaireFormComponent";
 import CandidateViewComponent from "./Components/CandidateViewComponent";
-import SummaryComponent from "./Components/SummaryComponent";
+import AdminSummaryComponent from "./Components/AdminSummaryComponent";
+import UserSummaryComponent from "./Components/UserSummaryComponent";
+import api from "./Services/api";
 import { Container, CssBaseline } from "@mui/material";
-import "./App.css";
 
 function App() {
   const [questions, setQuestions] = useState([]);
-  const [candidate, setCandidate] = useState({});
   const [answers, setAnswers] = useState([]);
+  const [candidate, setCandidate] = useState({});
+
+  useEffect(() => {
+    // Fetch questions from API on load
+    api.getQuestions().then((response) => setQuestions(response.data));
+  }, []);
 
   return (
     <Router>
@@ -37,15 +43,12 @@ function App() {
             }
           />
           <Route
-            path="/summary"
+            path="/user-summary"
             element={
-              <SummaryComponent
-                candidate={candidate}
-                questions={questions}
-                answers={answers}
-              />
+              <UserSummaryComponent candidate={candidate} answers={answers} />
             }
           />
+          <Route path="/admin-summary" element={<AdminSummaryComponent />} />
         </Routes>
       </Container>
     </Router>

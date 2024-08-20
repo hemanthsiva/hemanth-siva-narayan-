@@ -1,206 +1,302 @@
 {
   "questions": [
     {
-      "id": "860a",
-      "candidate": {
-        "name": "Hemanth Siva Narayan C",
-        "email": "hemanthsivanarayanc@gmail.com",
-        "phone": "08883963966"
-      },
-      "questions": []
-    },
-    {
-      "id": "8c35",
-      "candidate": {
-        "name": "Hemanth Siva Narayan C",
-        "email": "hemanthsivanarayanc@gmail.com",
-        "phone": "08883963966"
-      },
+      "id": 1,
+      "title": "General Knowledge",
       "questions": [
         {
-          "question": "what is java",
+          "id": 1,
+          "question": "What is the capital of France?",
           "options": [
-            "pl",
-            "sql",
-            "html",
-            "css",
-            "none"
+            "Paris",
+            "London",
+            "Berlin",
+            "Madrid"
           ],
-          "correctAnswer": "pl"
+          "correctAnswer": "Paris"
         },
         {
-          "question": "what is react",
+          "id": 2,
+          "question": "What is the chemical symbol for water?",
           "options": [
-            "js",
-            "ts",
-            "both",
-            "none ",
-            "programming lang"
+            "H2O",
+            "O2",
+            "CO2",
+            "NaCl"
           ],
-          "correctAnswer": "both"
-        },
-        {
-          "question": "",
-          "options": [
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "correctAnswer": ""
+          "correctAnswer": "H2O"
         }
       ]
     },
     {
-      "id": "8b8a",
-      "candidate": {
-        "name": "Hemanth Siva Narayan C",
-        "email": "hemanthsivanarayanc@gmail.com",
-        "phone": "08883963966"
+      "0": {
+        "question": "cbuioUOWFBFC",
+        "options": [
+          "DIU",
+          "BH",
+          "EFHIO",
+          "HOIFH",
+          "OI"
+        ],
+        "correctAnswer": "BH"
       },
-      "questions": [
-        {
-          "question": "what is java",
-          "options": [
-            "123",
-            "456",
-            "789",
-            "opq",
-            "qwe"
-          ],
-          "correctAnswer": "123"
-        },
-        {
-          "question": "what is react",
-          "options": [
-            "qaz",
-            "wer",
-            "oqk",
-            "ebw",
-            "qne"
-          ],
-          "correctAnswer": "qne"
-        },
-        {
-          "question": "",
-          "options": [
-            "",
-            "",
-            "",
-            "",
-            ""
-          ],
-          "correctAnswer": ""
-        }
-      ]
+      "id": "65fa"
     },
     {
-      "id": "dff3",
-      "candidate": {
-        "name": "Hemanth Siva Narayan C",
-        "email": "hemanthsivanarayanc@gmail.com",
-        "phone": "08883963966"
+      "0": {
+        "id": 1,
+        "title": "General Knowledge",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the capital of France?",
+            "options": [
+              "Paris",
+              "London",
+              "Berlin",
+              "Madrid"
+            ],
+            "correctAnswer": "Paris"
+          },
+          {
+            "id": 2,
+            "question": "What is the chemical symbol for water?",
+            "options": [
+              "H2O",
+              "O2",
+              "CO2",
+              "NaCl"
+            ],
+            "correctAnswer": "H2O"
+          }
+        ]
       },
-      "questions": [
-        {
-          "question": "uihui",
+      "1": {
+        "0": {
+          "question": "cbuioUOWFBFC",
           "options": [
-            "uguig",
-            "uuig",
-            "uigu",
-            "1234",
-            "7689"
+            "DIU",
+            "BH",
+            "EFHIO",
+            "HOIFH",
+            "OI"
           ],
-          "correctAnswer": "1234"
+          "correctAnswer": "BH"
         },
-        {
-          "question": "jij9",
-          "options": [
-            "gugui",
-            "ubiub",
-            "oiubiob",
-            "oibibio",
-            "5678"
-          ],
-          "correctAnswer": "5678"
-        }
-      ]
+        "id": "65fa"
+      },
+      "id": "ad62"
     },
     {
-      "id": "29d8",
-      "candidate": {
-        "name": "Hemanth Siva Narayan C",
-        "email": "hemanthsivanarayanc@gmail.com",
-        "phone": "8883963966"
+      "0": {
+        "question": "idoiofhiIH",
+        "options": [
+          "EFOH",
+          "IOEF",
+          "IOHFFIO",
+          "HOIFHOI",
+          "HIFHEIOW"
+        ],
+        "correctAnswer": "IOEF"
       },
-      "questions": [
-        {
-          "question": "what is java",
+      "id": "6c08"
+    },
+    {
+      "0": {
+        "id": 1,
+        "title": "General Knowledge",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the capital of France?",
+            "options": [
+              "Paris",
+              "London",
+              "Berlin",
+              "Madrid"
+            ],
+            "correctAnswer": "Paris"
+          },
+          {
+            "id": 2,
+            "question": "What is the chemical symbol for water?",
+            "options": [
+              "H2O",
+              "O2",
+              "CO2",
+              "NaCl"
+            ],
+            "correctAnswer": "H2O"
+          }
+        ]
+      },
+      "1": {
+        "0": {
+          "question": "cbuioUOWFBFC",
           "options": [
-            "pl",
-            "sql",
-            "apl",
-            "both",
-            "none"
+            "DIU",
+            "BH",
+            "EFHIO",
+            "HOIFH",
+            "OI"
           ],
-          "correctAnswer": "pl"
+          "correctAnswer": "BH"
         },
-        {
-          "question": "what is react",
+        "id": "65fa"
+      },
+      "2": {
+        "0": {
+          "id": 1,
+          "title": "General Knowledge",
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the capital of France?",
+              "options": [
+                "Paris",
+                "London",
+                "Berlin",
+                "Madrid"
+              ],
+              "correctAnswer": "Paris"
+            },
+            {
+              "id": 2,
+              "question": "What is the chemical symbol for water?",
+              "options": [
+                "H2O",
+                "O2",
+                "CO2",
+                "NaCl"
+              ],
+              "correctAnswer": "H2O"
+            }
+          ]
+        },
+        "1": {
+          "0": {
+            "question": "cbuioUOWFBFC",
+            "options": [
+              "DIU",
+              "BH",
+              "EFHIO",
+              "HOIFH",
+              "OI"
+            ],
+            "correctAnswer": "BH"
+          },
+          "id": "65fa"
+        },
+        "id": "ad62"
+      },
+      "3": {
+        "0": {
+          "question": "idoiofhiIH",
           "options": [
-            "sl",
-            "ql",
-            "rl",
-            "none",
-            "all"
+            "EFOH",
+            "IOEF",
+            "IOHFFIO",
+            "HOIFHOI",
+            "HIFHEIOW"
           ],
-          "correctAnswer": "sl"
-        }
-      ]
+          "correctAnswer": "IOEF"
+        },
+        "id": "6c08"
+      },
+      "id": "18ae"
     }
   ],
-  "candidates": [],
   "answers": [
     {
-      "id": "4c9f",
-      "answers": []
+      "userId": 1,
+      "responses": {
+        "1": "Paris",
+        "2": "H2O"
+      }
     },
     {
-      "id": "c345",
-      "answers": [
-        "pl",
-        "both"
-      ]
+      "id": "b828",
+      "undefined": "BH"
     },
     {
-      "id": "0418",
-      "answers": [
-        "123",
-        "qne"
-      ]
+      "id": "d7c5",
+      "answers": {
+        "undefined": "BH"
+      },
+      "candidate": {
+        "name": "Hemanth Siva Narayan C",
+        "email": "hemanthsivanarayanc@gmail.com",
+        "phone": "888397274"
+      },
+      "score": 1
     },
     {
-      "id": "be88",
-      "answers": [
-        null,
-        null,
-        ""
-      ]
+      "id": "2531",
+      "answers": {
+        "undefined": "IOEF"
+      },
+      "candidate": {
+        "name": "Hemanth Siva Narayan C",
+        "email": "hemanthsivanarayanc@gmail.com",
+        "phone": "08883963966"
+      },
+      "score": 1
     },
     {
-      "id": "b481",
-      "answers": [
-        "1234",
-        "5678"
-      ]
+      "id": "1477",
+      "answers": {
+        "undefined": "EFOH"
+      },
+      "candidate": {
+        "name": "Hemanth Siva Narayan C",
+        "email": "hemanthsivanarayanc@gmail.com",
+        "phone": "08883963966"
+      },
+      "score": 0
     },
     {
-      "id": "c092",
-      "answers": [
-        "pl",
-        "sl"
-      ]
+      "id": "0f75",
+      "answers": {
+        "undefined": "BH"
+      },
+      "candidate": {
+        "name": "",
+        "email": "",
+        "phone": ""
+      },
+      "score": 1
+    },
+    {
+      "id": "4844",
+      "answers": {
+        "undefined": "IOEF"
+      },
+      "candidate": {
+        "name": "",
+        "email": "",
+        "phone": ""
+      },
+      "score": 1
+    },
+    {
+      "id": "cc14",
+      "answers": {
+        "undefined": "IOEF"
+      },
+      "candidate": {
+        "name": "Hemanth Siva Narayan C",
+        "email": "hemanthsivanarayanc@gmail.com",
+        "phone": "08883963966"
+      },
+      "score": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "123-456-7890"
     }
   ]
 }
